@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
+这里主要是高阶函数的练习
 
 既然变量可以指向函数，函数的参数能接收变量，那么一个函数就可以接收另一个函数作为参数，这种函数就称之为高阶函数
 把函数作为参数传入，这样的函数称为高阶函数，函数式编程就是指这种高度抽象的编程范式。
@@ -22,7 +23,7 @@ sorted()函数就可以对list进行排序
 """
 
 import functools
-import play.PlayTest
+import play.FuncPy
 
 __author__ = 'fhammer'
 
@@ -205,4 +206,4 @@ if __name__ == '__main__':
     now()
     now_txt()
     test_partial()
-    play.PlayTest.say_hello('kkkkkkkk')
+    play.FuncPy.say_hello('kkkkkkkk')

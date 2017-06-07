@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+"""
+这一部分主要是来练习python 的高级特性的，主要有列表生成式  生成器 迭代  切片和迭代器
+"""
 from collections import Iterable
 import os
 
