@@ -84,3 +84,8 @@ if __name__ == "__main__":
     name_args('name', 10, city='BJ', job='SD')
     name_args('name', 10, 1, 2, 3, city='BJ', job='SD')
     print('你是上述三和十四大东hdhd'[0: 12])
+    words=[]
+    word="保利集团,马未都,中国科学技术馆,博物馆,新中国"
+    words.append(word.split(","))
+    words.append(word.split(","))
+    print(words)

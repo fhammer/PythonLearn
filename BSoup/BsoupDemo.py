@@ -3,7 +3,8 @@
 
 from bs4 import BeautifulSoup
 from urllib import request
-
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def readUrl(strUrl):
     with request.urlopen(strUrl) as f:

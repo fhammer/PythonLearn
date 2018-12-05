@@ -70,6 +70,17 @@ class LastUpdatedOrderedDict(OrderedDict):
         OrderedDict.__setitem__(self, key, value)
 
 
+def Foo():
+    i=0
+    def fc():
+        i=i+1
+        print(i)
+    return fc
+
 if __name__ == "__main__":
     # timedate_func()
     collections_fun()
+    f1=Foo()
+    f2=Foo()
+    f1()
+    f1()
