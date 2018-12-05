@@ -18,7 +18,7 @@ for i in range(data.shape[0]):  # 数字为数据的行数
     duanzi = duanzi + content
 
 # 创建连接
-conn = pymysql.connect(host='10.250.5.13', port=3306, user='myuser', passwd='mypassword', db='club', charset='utf8')
+conn = pymysql.connect(host='ip.10.1.1.1', port=3306, user='username', passwd='password', db='club', charset='utf8')
 # 创建游标
 cursor = conn.cursor()
 tags = jieba.analyse.extract_tags(duanzi, topK=100, withWeight=True)

@@ -4,7 +4,7 @@ import pymysql
 data = pd.read_csv(r'./csv/toutiao_dict.txt', encoding='utf-8', names=['A'])
 print(data.A)
 # 创建连接
-conn = pymysql.connect(host='10.250.5.13', port=3306, user='myuser', passwd='mypassword', db='club', charset='utf8')
+conn = pymysql.connect(host='ip.10.25.5.1', port=3306, user='user', passwd='password', db='club', charset='utf8')
 # 创建游标
 cursor = conn.cursor()
 times = 0

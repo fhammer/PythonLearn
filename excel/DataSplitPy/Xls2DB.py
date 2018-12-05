@@ -25,7 +25,7 @@ def xls_to_db(file_path, index_key):
         duanzi = duanzi + content
 
     # 创建连接
-    conn = pymysql.connect(host='10.250.5.13', port=3306, user='myuser', passwd='mypassword', db='club', charset='utf8')
+    conn = pymysql.connect(host='1.20.5.13', port=3306, user='user', passwd='password', db='club', charset='utf8')
     # 创建游标
     cursor = conn.cursor()
     tags = jieba.analyse.extract_tags(duanzi, topK=100, withWeight=True)
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     print(data.shape)
     print(data.columns)
     # 创建连接
-    conn = pymysql.connect(host='10.250.5.13', port=3306, user='myuser', passwd='mypassword', db='club', charset='utf8')
+    conn = pymysql.connect(host='1.20.5.3', port=3306, user='user', passwd='password', db='club', charset='utf8')
     # 创建游标
     cursor = conn.cursor()
     for name in data['Unnamed: 1']:

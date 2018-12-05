@@ -13,7 +13,7 @@ import sys
 
 
 def read_data():
-    xl_datas = xlrd.open_workbook(r"C:\Users\fuzh2\Desktop\201810\ContactUsOptionsTiles(20181101).xlsx")
+    xl_datas = xlrd.open_workbook(r"C:\Desktop\201810\ContactUsOptionsTiles(20181101).xlsx")
     if xl_datas.sheets():
         sheet_table = xl_datas.sheets()[0]
         print(sheet_table.nrows)
@@ -29,7 +29,7 @@ def read_data():
 
 def read_excel():
     # 打开文件
-    workbook = xlrd.open_workbook(r'C:\Users\fuzh2\Desktop\201810\ContactUsOptionsTiles(20181101).xlsx')
+    workbook = xlrd.open_workbook(r'C:\Desktop\201810\ContactUsOptionsTiles(20181101).xlsx')
     # 获取所有sheet
     sheets = workbook.sheet_names()  # [u'sheet1', u'sheet2']
     for shrrtItem in sheets:
@@ -55,7 +55,7 @@ def read_excel():
 
 def method_name():
     # 打开文件
-    workbook = xlrd.open_workbook(r'C:\Users\fuzh2\Desktop\201810\ContactUsOptionsTiles(20181101).xlsx')
+    workbook = xlrd.open_workbook(r'C:\Desktop\201810\ContactUsOptionsTiles(20181101).xlsx')
     # 获取所有sheet
     sheets = workbook.sheet_names()  # [u'sheet1', u'sheet2']
     # for shrrtItem in sheets:
